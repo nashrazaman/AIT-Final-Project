@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet", href="stylesheets/style.css">
+    </head>
+    <body>
+        <div class="scene1">
+            {{#each characters}}
+        <span> {{name}} </span>
+        {{/each}}
+           <span> decides to go on a walk alone. They sit down under a tree. Suddenly, a apple falls on their head.</span> 
+        
+            
+        <form method="POST" action="">
+            <input type= "radio" name='scene1' id= "option1" value="They eat the apple">
+            <label for="option1"> Eat the apple </label> <br>
+
+            <input type= "radio" name='scene1' id= "option2" value="They throw the apple at the nearest person">
+            <label for="option2"> Throw the apple at the nearest person </label> <br>
+
+            <input type= "radio" name='scene1' id="option2" value="They discover gravity">
+            <label for="option3"> Discover gravity </label> <br>
+
+            <input type="submit" value="enter">
+        </form>
+
+        </div>
+    </body>
+</html>
