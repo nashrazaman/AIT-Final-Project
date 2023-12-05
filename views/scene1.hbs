@@ -6,22 +6,36 @@
         <link rel="stylesheet", href="stylesheets/style.css">
     </head>
     <body>
+        <img class="tree" src="images/background.png" width="800px" height="619px"> 
+        <img class="frame" src="images/frame.png" width="820px" height="619px">
+        
+        {{#if isBoy}}
+            <img class="boy" src="images/boy.png">
+        {{else}}
+            <img class="girl" src="images/girl.png" width="200px" height="325px">
+        {{/if}}
+
+        <img class="apple" src="images/apple.png" width="60px" height="74px"> 
+
+        
+
         <div class="scene1">
+            
             {{#each characters}}
         <span> {{name}} </span>
-        {{/each}}
-           <span> decides to go on a walk alone. They sit down under a tree. Suddenly, a apple falls on their head.</span> 
+        {{/each}} 
+           <span> decides to go on a walk alone. Suddenly, a apple falls on their head.</span> 
         
             
         <form method="POST" action="">
             <input type= "radio" name='scene1' id= "option1" value="They eat the apple">
-            <label for="option1"> Eat the apple </label> <br>
+            <label for="option1"> They eat the apple </label> <br>
 
             <input type= "radio" name='scene1' id= "option2" value="They throw the apple at the nearest person">
-            <label for="option2"> Throw the apple at the nearest person </label> <br>
+            <label for="option2"> They throw the apple at the nearest person </label> <br>
 
             <input type= "radio" name='scene1' id="option2" value="They discover gravity">
-            <label for="option3"> Discover gravity </label> <br>
+            <label for="option3"> They discover gravity </label> <br>
 
             <input type="submit" value="enter">
         </form>
