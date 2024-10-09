@@ -1,6 +1,6 @@
 
 
-# Your Story -- Name not concrete as of yet!
+# Your Story 
 
 ## Overview
 
